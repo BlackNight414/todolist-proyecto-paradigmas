@@ -137,3 +137,4 @@ pyvenv.cfg
 migrations/
 **/migrations/*.py
 
+# .gitignore

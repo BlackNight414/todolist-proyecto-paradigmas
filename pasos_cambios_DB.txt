@@ -1,2 +1,4 @@
+# Estos comandos se ejecutan en la terminal
+flask db init       # crea la carpeta de migraciones con archivos de configuracion de migraciones
 flask db migrate -m "inicial"       # para cuando hagamos un cambio en el código que afecte a la base de datos.
 lask db upgrade         # para actualizar a esa version con los cambios que hemos hecho
