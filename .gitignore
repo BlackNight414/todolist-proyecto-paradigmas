@@ -138,5 +138,5 @@ migrations/
 **/migrations/*.py
 
 .gitignore
-.mis_notas.txt
-.pasos_cambios_DB.txt
+mis_notas.txt
+pasos_cambios_DB.txt
