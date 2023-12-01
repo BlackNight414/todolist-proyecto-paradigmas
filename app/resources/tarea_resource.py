@@ -27,7 +27,7 @@ Crea nueva Tarea
 """
 @tarea.route('/', methods=['POST'])
 def create():
-    tarea = tarea_schema.load(request.json)
+    tarea = tarea_schema.load(request.json) 
     resp = tarea_schema.dump(service.create(tarea))
     return resp, 201
 

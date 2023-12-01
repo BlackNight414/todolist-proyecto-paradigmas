@@ -7,3 +7,5 @@ class UsuarioRepository:
 
     def get_all(self) -> list[Usuario]:
         return db.session.query(self.__model).all()
+
+    

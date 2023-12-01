@@ -137,4 +137,6 @@ pyvenv.cfg
 migrations/
 **/migrations/*.py
 
-# .gitignore
+.gitignore
+.mis_notas.txt
+.pasos_cambios_DB.txt
