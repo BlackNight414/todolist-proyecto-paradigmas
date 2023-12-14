@@ -5,7 +5,7 @@ class CategoriaSchema(Schema):
     id = fields.Integer(dump_only=True)
     nombre = fields.String(required=True)
     #descripcion = fields.String()
-    tareas = fields.Nested("TareaSchema", many=True, only=("id", "fecha", "duracion", "descripcion"))
+    tareas = fields.Nested("TareaSchema", many=True, only=("id", "fecha", "duracion"))
     
     @post_load
     def make_categoria(self, data, **kwargs):

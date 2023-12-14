@@ -12,8 +12,8 @@ class TareaSchema(Schema):
     estado_id = fields.Integer(required=True)
     creador = fields.Nested("UsuarioSchema", only=("id", "nombre", "apellido", "email"))
     ejecutante = fields.Nested("UsuarioSchema", only=("id", "nombre", "apellido", "email"))
-    categoria = fields.Nested("CategoriaSchema", only=("id", "nombre", "descripcion"))
-    estado = fields.Nested("EstadoSchema", only=("id", "nombre", "descripcion"))
+    categoria = fields.Nested("CategoriaSchema", only=("id", "nombre"))
+    estado = fields.Nested("EstadoSchema", only=("id", "nombre"))
     
     @post_load
     def make_tarea(self, data, **kwargs):

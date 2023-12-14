@@ -5,7 +5,7 @@ class EstadoSchema(Schema):
     id = fields.Integer(dump_only=True)
     nombre = fields.String(required=True,validate=validate.Length(min=2, max=120))
     #descripcion = fields.String()
-    estados_tareas = fields.Nested("TareaSchema", many=True, only=("id", "fecha", "duracion", "descripcion"))
+    estados_tareas = fields.Nested("TareaSchema", many=True, only=("id", "fecha", "duracion"))
 
     @post_load
     def make_estado(self, data, **kwargs):
